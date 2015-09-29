@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LeftMainViewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SOX-vR-wPA">
+                        <rect key="frame" x="32" y="15" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SOX-vR-wPA" secondAttribute="height" multiplier="1:1" id="QFX-TC-JMi"/>
+                            <constraint firstAttribute="width" constant="22" id="h7t-Oq-umZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQh-eT-HZb">
+                        <rect key="frame" x="69" y="17" width="42" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zSn-9M-77m">
+                        <rect key="frame" x="215" y="14" width="73" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zSn-9M-77m" secondAttribute="height" multiplier="73:24" id="bpj-dd-g6k"/>
+                            <constraint firstAttribute="width" constant="73" id="wfY-aD-YhY"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SOX-vR-wPA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="4eF-Ke-f3N"/>
+                    <constraint firstAttribute="trailing" secondItem="zSn-9M-77m" secondAttribute="trailing" constant="32" id="FJ9-i3-Gv1"/>
+                    <constraint firstAttribute="centerY" secondItem="zSn-9M-77m" secondAttribute="centerY" constant="-0.5" id="IOY-ZO-K5p"/>
+                    <constraint firstItem="SOX-vR-wPA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="O7g-IB-5Kc"/>
+                    <constraint firstItem="fQh-eT-HZb" firstAttribute="leading" secondItem="SOX-vR-wPA" secondAttribute="trailing" constant="15" id="YkF-nf-Umk"/>
+                    <constraint firstItem="fQh-eT-HZb" firstAttribute="centerY" secondItem="zSn-9M-77m" secondAttribute="centerY" id="Z2d-ut-JNf"/>
+                    <constraint firstItem="fQh-eT-HZb" firstAttribute="centerY" secondItem="SOX-vR-wPA" secondAttribute="centerY" id="eZv-dq-PjR"/>
+                    <constraint firstAttribute="bottom" secondItem="SOX-vR-wPA" secondAttribute="bottom" constant="10" id="gmk-4i-p4e"/>
+                    <constraint firstAttribute="centerY" secondItem="fQh-eT-HZb" secondAttribute="centerY" id="ulO-Qv-aBV"/>
+                    <constraint firstItem="fQh-eT-HZb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="vcV-mY-FvJ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ulO-Qv-aBV"/>
+                        <exclude reference="IOY-ZO-K5p"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftIMG" destination="SOX-vR-wPA" id="htY-VU-Uam"/>
+                <outlet property="rightIMG" destination="zSn-9M-77m" id="B8H-Xv-fYt"/>
+                <outlet property="titleLabel" destination="fQh-eT-HZb" id="bcV-bC-jUg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiveChatCell" rowHeight="58" id="KGk-i7-Jjw" customClass="ReceiveChatCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aJ2-Gt-RaV">
+                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Lj4-MV-uju"/>
+                            <constraint firstAttribute="width" constant="44" id="cpL-Ex-65n"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您好" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2Y-YQ-tLR">
+                        <rect key="frame" x="69" y="8" width="233" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="ePz-ZO-hT3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aJ2-Gt-RaV" firstAttribute="top" secondItem="E2Y-YQ-tLR" secondAttribute="top" id="3Ps-xS-itX"/>
+                    <constraint firstItem="aJ2-Gt-RaV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JoU-h2-dL6"/>
+                    <constraint firstAttribute="bottom" secondItem="aJ2-Gt-RaV" secondAttribute="bottom" constant="5" id="PcU-d0-3Gb"/>
+                    <constraint firstAttribute="bottom" secondItem="E2Y-YQ-tLR" secondAttribute="bottom" constant="5" id="fpC-8t-7Nf"/>
+                    <constraint firstAttribute="trailing" secondItem="E2Y-YQ-tLR" secondAttribute="trailing" constant="18" id="gdT-RE-xcO"/>
+                    <constraint firstItem="aJ2-Gt-RaV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="xyX-RS-Ppz"/>
+                    <constraint firstItem="E2Y-YQ-tLR" firstAttribute="leading" secondItem="aJ2-Gt-RaV" secondAttribute="trailing" constant="17" id="zCv-oS-e2m"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="PcU-d0-3Gb"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avator" destination="aJ2-Gt-RaV" id="GbD-P3-YU0"/>
+                <outlet property="contentLbl" destination="E2Y-YQ-tLR" id="KsJ-JH-GED"/>
+            </connections>
+            <point key="canvasLocation" x="372" y="361"/>
+        </tableViewCell>
+    </objects>
+</document>

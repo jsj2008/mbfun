@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>WefafaBuildVer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>WefafaDeveloperVer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>mbfun_app.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>mbfun_dev.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>mbfun_test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>046807491A46B17800989B83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>11D70EC217748D6E00649ABC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90519E7A1B3058DB008A2B80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9051A83C1B305C23008A2B80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9416F3501B22082A0006FBCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

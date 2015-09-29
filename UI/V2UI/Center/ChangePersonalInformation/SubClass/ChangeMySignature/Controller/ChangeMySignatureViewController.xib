@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeMySignatureViewController">
+            <connections>
+                <outlet property="mySignatureTextView" destination="Sme-zQ-itd" id="Prb-OR-BQL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5X-c5-nxn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="个性签名个性签名个性签名个性签名个性签名" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-zQ-itd">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <variation key="widthClass=compact">
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            </variation>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2Ra-ct-n6e"/>
+                        <constraint firstAttribute="trailing" secondItem="Sme-zQ-itd" secondAttribute="trailing" constant="10" id="LB6-6Q-L2y"/>
+                        <constraint firstItem="Sme-zQ-itd" firstAttribute="top" secondItem="u5X-c5-nxn" secondAttribute="top" id="Pkd-S1-P0t"/>
+                        <constraint firstAttribute="bottom" secondItem="Sme-zQ-itd" secondAttribute="bottom" id="pke-MR-kIg"/>
+                        <constraint firstItem="Sme-zQ-itd" firstAttribute="leading" secondItem="u5X-c5-nxn" secondAttribute="leading" constant="10" id="rEZ-X6-zdH"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="Sme-zQ-itd"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="2Ra-ct-n6e"/>
+                            <exclude reference="LB6-6Q-L2y"/>
+                            <exclude reference="Pkd-S1-P0t"/>
+                            <exclude reference="pke-MR-kIg"/>
+                            <exclude reference="rEZ-X6-zdH"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="Sme-zQ-itd"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="2Ra-ct-n6e"/>
+                            <include reference="LB6-6Q-L2y"/>
+                            <include reference="Pkd-S1-P0t"/>
+                            <include reference="pke-MR-kIg"/>
+                            <include reference="rEZ-X6-zdH"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="u5X-c5-nxn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="9Ux-C7-nKn"/>
+                <constraint firstItem="u5X-c5-nxn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L76-G8-rjw"/>
+                <constraint firstAttribute="trailing" secondItem="u5X-c5-nxn" secondAttribute="trailing" id="TRQ-FY-16I"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="u5X-c5-nxn"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="9Ux-C7-nKn"/>
+                    <exclude reference="L76-G8-rjw"/>
+                    <exclude reference="TRQ-FY-16I"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="u5X-c5-nxn"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="9Ux-C7-nKn"/>
+                    <include reference="L76-G8-rjw"/>
+                    <include reference="TRQ-FY-16I"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="204" y="331"/>
+        </view>
+    </objects>
+</document>

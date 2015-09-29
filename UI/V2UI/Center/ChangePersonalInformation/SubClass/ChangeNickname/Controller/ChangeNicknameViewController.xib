@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeNicknameViewController">
+            <connections>
+                <outlet property="nickNameTextField" destination="e0b-oa-iSV" id="7le-Ik-ht3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrc-bp-h3l">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="e0b-oa-iSV">
+                            <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <attributedString key="attributedText">
+                                <fragment content="sss">
+                                    <attributes>
+                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="29" headerLevel="19"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <textInputTraits key="textInputTraits"/>
+                            <variation key="widthClass=compact">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            </variation>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="e0b-oa-iSV" firstAttribute="leading" secondItem="hrc-bp-h3l" secondAttribute="leading" constant="15" id="0DU-ax-llz"/>
+                        <constraint firstAttribute="bottom" secondItem="e0b-oa-iSV" secondAttribute="bottom" id="Ddh-3e-9mx"/>
+                        <constraint firstAttribute="trailing" secondItem="e0b-oa-iSV" secondAttribute="trailing" constant="15" id="KrP-jR-Pcu"/>
+                        <constraint firstItem="e0b-oa-iSV" firstAttribute="top" secondItem="hrc-bp-h3l" secondAttribute="top" id="S9K-mt-Z6I"/>
+                        <constraint firstAttribute="height" constant="44" id="Shl-0c-nFi"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="e0b-oa-iSV"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="Shl-0c-nFi"/>
+                            <exclude reference="0DU-ax-llz"/>
+                            <exclude reference="Ddh-3e-9mx"/>
+                            <exclude reference="KrP-jR-Pcu"/>
+                            <exclude reference="S9K-mt-Z6I"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="e0b-oa-iSV"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="Shl-0c-nFi"/>
+                            <include reference="0DU-ax-llz"/>
+                            <include reference="Ddh-3e-9mx"/>
+                            <include reference="KrP-jR-Pcu"/>
+                            <include reference="S9K-mt-Z6I"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hrc-bp-h3l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bNY-G6-Sll"/>
+                <constraint firstItem="hrc-bp-h3l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="eI7-OL-XdB"/>
+                <constraint firstAttribute="trailing" secondItem="hrc-bp-h3l" secondAttribute="trailing" id="tCv-5x-XuG"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="hrc-bp-h3l"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="bNY-G6-Sll"/>
+                    <exclude reference="eI7-OL-XdB"/>
+                    <exclude reference="tCv-5x-XuG"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="hrc-bp-h3l"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="bNY-G6-Sll"/>
+                    <include reference="eI7-OL-XdB"/>
+                    <include reference="tCv-5x-XuG"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

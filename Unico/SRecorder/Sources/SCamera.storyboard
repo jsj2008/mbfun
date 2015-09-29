@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Recorder View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController storyboardIdentifier="SCameraStoryBoardID" id="2" customClass="SCRecorderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Rg-nO-VcZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wEJ-QZ-de3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iw9-cB-Pni" userLabel="Preview View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzy-y0-a9A">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Recorded - 0.0 sec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCO-VC-azk" userLabel="Time recorded Label">
+                                        <rect key="frame" x="71" y="4" width="178" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="178" id="GXE-97-yDq"/>
+                                        </constraints>
+                                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cCO-VC-azk" secondAttribute="bottom" constant="18" id="DG5-eF-yW0"/>
+                                    <constraint firstItem="cCO-VC-azk" firstAttribute="top" secondItem="wzy-y0-a9A" secondAttribute="top" constant="4" id="Wsr-UU-Tc5"/>
+                                    <constraint firstItem="cCO-VC-azk" firstAttribute="centerX" secondItem="wzy-y0-a9A" secondAttribute="centerX" id="n1E-NG-3Ci"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wzy-y0-a9A" firstAttribute="top" secondItem="3" secondAttribute="top" id="84c-u5-oyr"/>
+                            <constraint firstAttribute="trailing" secondItem="wzy-y0-a9A" secondAttribute="trailing" id="8hL-rU-FWQ"/>
+                            <constraint firstItem="iw9-cB-Pni" firstAttribute="bottom" secondItem="wEJ-QZ-de3" secondAttribute="top" id="Fvp-QM-coh"/>
+                            <constraint firstItem="iw9-cB-Pni" firstAttribute="leading" secondItem="wzy-y0-a9A" secondAttribute="leading" id="HW9-xa-n7h"/>
+                            <constraint firstItem="wEJ-QZ-de3" firstAttribute="top" secondItem="wzy-y0-a9A" secondAttribute="bottom" constant="546" id="Nmj-vO-lGW"/>
+                            <constraint firstItem="wzy-y0-a9A" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="RN0-nI-hHS"/>
+                            <constraint firstItem="wzy-y0-a9A" firstAttribute="trailing" secondItem="iw9-cB-Pni" secondAttribute="trailing" id="aKO-i1-7aM"/>
+                            <constraint firstItem="iw9-cB-Pni" firstAttribute="top" secondItem="wzy-y0-a9A" secondAttribute="top" id="h4j-Ln-IQw"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="previewView" destination="iw9-cB-Pni" id="TJx-SO-uXu"/>
+                        <outlet property="timeRecordedLabel" destination="cCO-VC-azk" id="8mA-ME-xof"/>
+                        <segue destination="VeQ-Zi-V20" kind="modal" identifier="Video" id="VWL-Hy-oc2"/>
+                        <segue destination="n4i-ZU-lEg" kind="modal" identifier="Photo" id="Z4i-n8-Da2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.59999999999999" y="187.44"/>
+        </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="nAI-tE-muv">
+            <objects>
+                <viewController storyboardIdentifier="SCVideoPlayerViewController" id="VeQ-Zi-V20" customClass="SCVideoPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="exA-Gc-hLE"/>
+                        <viewControllerLayoutGuide type="bottom" id="DnU-cg-xnQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V11-1J-PU0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYn-vb-aBd" customClass="SCSwipeableFilterView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vYn-vb-aBd" firstAttribute="bottom" secondItem="DnU-cg-xnQ" secondAttribute="top" id="JwQ-bS-TDS"/>
+                            <constraint firstItem="vYn-vb-aBd" firstAttribute="top" secondItem="V11-1J-PU0" secondAttribute="top" id="cGR-L4-3Gk"/>
+                            <constraint firstItem="vYn-vb-aBd" firstAttribute="leading" secondItem="V11-1J-PU0" secondAttribute="leading" id="nld-vR-TWW"/>
+                            <constraint firstAttribute="trailing" secondItem="vYn-vb-aBd" secondAttribute="trailing" id="r3C-gi-gCy"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="filterSwitcherView" destination="vYn-vb-aBd" id="UTW-5m-3hq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQF-XH-HvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619.73333333333335" y="165.66666666666666"/>
+        </scene>
+        <!--Image Displayer View Controller-->
+        <scene sceneID="Tj9-NG-6ch">
+            <objects>
+                <viewController storyboardIdentifier="SCImageDisplayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n4i-ZU-lEg" customClass="SCImageDisplayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ies-vR-mSc"/>
+                        <viewControllerLayoutGuide type="bottom" id="DDa-7Y-pto"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6sY-Dg-LS2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krI-1R-E4Z" customClass="SCImageFilterView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="krI-1R-E4Z" firstAttribute="top" secondItem="6sY-Dg-LS2" secondAttribute="top" id="Eo9-mB-rBR"/>
+                            <constraint firstAttribute="trailing" secondItem="krI-1R-E4Z" secondAttribute="trailing" id="NqA-fZ-leq"/>
+                            <constraint firstItem="krI-1R-E4Z" firstAttribute="bottom" secondItem="DDa-7Y-pto" secondAttribute="top" id="g8Q-lj-orC"/>
+                            <constraint firstItem="krI-1R-E4Z" firstAttribute="leading" secondItem="6sY-Dg-LS2" secondAttribute="leading" id="qaF-M0-Q4E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hOj-oO-IGn"/>
+                    <connections>
+                        <outlet property="filterSwitcherView" destination="krI-1R-E4Z" id="Spr-wD-hYN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oW-9Q-aD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619.73333333333335" y="934.36000000000001"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" red="0.0060155613210773895" green="1" blue="0.97747185922432611" alpha="1" colorSpace="calibratedRGB"/>
+</document>

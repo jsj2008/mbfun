@@ -1,0 +1,118 @@
+//
+// Prefix header for all source files of the 'Wefafa' target in the 'Wefafa' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Base.h"
+    #import "ModelBase.h"
+    #import "NSDateAdditions.h"
+    #import "NSNullAdditions.h"
+
+#import <CoreData/CoreData.h>
+
+// unico
+// Common Classes here
+#import "DoImagePickerController.h"
+#import "UzysAssetsPickerController.h"
+#import "SCRecorder.h"
+#import "MBProgressHUD.h"
+#import "AFNetworking.h"
+#import "UIFont+WDCustomLoader.h"
+#import "PureLayout.h"
+#import "MWKProgressIndicator.h"
+#import "RKDropdownAlert.h"
+#import "UIAlertView+Blocks.h"
+#import "UIImage+Utility.h"
+#import "UILabel+StoryFont.h"
+#import "STypeDef.h"
+#import "SGlobal.h"
+#import "SBaseViewController.h"
+#import "BaseViewController.h"
+//#import "LLCameraViewController.h"
+
+#import "UIImageView+WebCache.h"
+// unico fun
+// 后续稳定后import
+//#import "CoverEditViewController.h"
+//#import "SUtilityTool.h"
+
+// fun
+#import "NSString+RTSizeWithFont.h"
+#import "RTArray.h"
+#import "UIView+BGFrame.h"
+#import "V2UIGlobleMacro.h"
+#import "TalkingData.h"
+
+
+#define TOPIC_TEXT_PLACEHOLDER @"请输入您的内容..."
+#define MBFUN_REMOTE @"MBFUN_REMOTE"    //远程推送
+
+#endif
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < 50000
+#define __weak __unsafe_unretained
+#define weak unsafe_unretained
+#endif
+
+#define UI_SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define UI_SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCALE_UI_SCREEN ([[UIScreen mainScreen] bounds].size.width/375)
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define ios7_height 49+20
+#define Btn_WITHE 60
+#define Btn_HIGHT 60
+#define  ListTabViewCellWidth 70
+
+#define UIColorFromRGB(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:1.0]
+
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] applicationFrame].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] applicationFrame].size.height
+
+// APP Define
+
+#define FIRSTSTARTAPP @"FIRSTSTARTAPP"
+
+#define DEFAULTS [NSUserDefaults standardUserDefaults]
+
+#define DefaultsImgViewURL @"http://api.wefafa.com/demo/img/loading.png"
+
+#define ScrollViewImgViewURL @"http://api.wefafa.com/interface/show.ashx"
+
+#define TabbarImgViewURL @"http://api.wefafa.com/weapp/zjxx/index.xml"
+
+#define UnicoServiceKey @"7def8c7b4f8b6cbefbdd8bc13d1441d3"
+
+// --------------------------------------------------------------------------------------------
+// define env here 这个target固定test测试环境
+#define _TEST_VER_
+
+
+
+
+
+
+
+
+
+

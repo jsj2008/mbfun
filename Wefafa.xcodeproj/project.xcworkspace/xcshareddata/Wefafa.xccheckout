@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0A6C3ED0-0096-4E92-8C7C-1595AAC7B3E5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Wefafa</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EE625EAE8327A387328EC2D6D254D6A4B0E5B390</key>
+		<string>git.mb.com:YouFan/mbfun_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Wefafa.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EE625EAE8327A387328EC2D6D254D6A4B0E5B390</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git.mb.com:YouFan/mbfun_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EE625EAE8327A387328EC2D6D254D6A4B0E5B390</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EE625EAE8327A387328EC2D6D254D6A4B0E5B390</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mbfun_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

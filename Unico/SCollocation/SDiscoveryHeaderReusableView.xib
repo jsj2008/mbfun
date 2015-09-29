@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SDiscoveryHeaderReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1767"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-sx-6jF" customClass="ShowAdvertisementView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.39607843139999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="JZ4-sx-6jF" secondAttribute="height" multiplier="75:34" id="03E-fa-Sf9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAT-DJ-xgT">
+                    <rect key="frame" x="0.0" y="170" width="375" height="85"/>
+                    <subviews>
+                        <button opaque="NO" tag="121" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3Y-Tw-muJ" customClass="SDiscoverySelectedButton">
+                            <rect key="frame" x="15" y="8" width="60.5" height="69"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <state key="normal" title="时尚达人" image="Unico/star_shop.png">
+                                <color key="titleColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jumpButtonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="8jL-Em-04s"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="122" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plg-cW-7up" customClass="SDiscoverySelectedButton">
+                            <rect key="frame" x="85.5" y="8" width="60.5" height="69"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <state key="normal" title="推荐品牌" image="Unico/brand.png">
+                                <color key="titleColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jumpButtonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="lWe-xk-kAg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="125" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1N-AH-gdO" customClass="SDiscoverySelectedButton">
+                            <rect key="frame" x="299.5" y="8" width="60.5" height="69"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <state key="normal" title="当前活动" image="Unico/activity.png">
+                                <color key="titleColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jumpButtonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="1kL-XA-lGv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="124" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa2-NU-u9T" customClass="SDiscoverySelectedButton">
+                            <rect key="frame" x="226" y="8" width="60.5" height="69"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <state key="normal" title="时尚资讯" image="Unico/consulting.png">
+                                <color key="titleColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jumpButtonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="TBc-RE-Ve5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="123" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmN-v5-PoD" customClass="SDiscoverySelectedButton">
+                            <rect key="frame" x="156" y="8" width="60" height="69"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <state key="normal" title="最+搭配" image="Unico/collocation.png">
+                                <color key="titleColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jumpButtonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="qP3-ly-5y5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="height" secondItem="hmN-v5-PoD" secondAttribute="height" id="2En-F4-748"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="width" secondItem="plg-cW-7up" secondAttribute="width" id="6MF-pT-cpg"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="centerY" secondItem="c3Y-Tw-muJ" secondAttribute="centerY" id="7bl-WD-D8Z"/>
+                        <constraint firstAttribute="bottom" secondItem="c3Y-Tw-muJ" secondAttribute="bottom" constant="8" id="CDy-VY-FJz"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="width" secondItem="pa2-NU-u9T" secondAttribute="width" id="Gjy-fT-fNo"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="height" secondItem="c3Y-Tw-muJ" secondAttribute="height" id="Kkw-PF-UUC"/>
+                        <constraint firstAttribute="width" secondItem="NAT-DJ-xgT" secondAttribute="height" multiplier="75:17" id="LF3-uI-QOU"/>
+                        <constraint firstAttribute="centerY" secondItem="c3Y-Tw-muJ" secondAttribute="centerY" id="Pm2-6I-p0T"/>
+                        <constraint firstAttribute="trailing" secondItem="c1N-AH-gdO" secondAttribute="trailing" constant="15" id="QVf-fi-e1N"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="centerY" secondItem="pa2-NU-u9T" secondAttribute="centerY" id="Rmd-oe-Raf"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="width" secondItem="c3Y-Tw-muJ" secondAttribute="width" id="V01-Ft-IBz"/>
+                        <constraint firstItem="c3Y-Tw-muJ" firstAttribute="top" secondItem="NAT-DJ-xgT" secondAttribute="top" constant="8" id="ag9-qI-VUW"/>
+                        <constraint firstItem="c3Y-Tw-muJ" firstAttribute="leading" secondItem="NAT-DJ-xgT" secondAttribute="leading" constant="15" id="ddo-Ef-ZeX"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="leading" secondItem="pa2-NU-u9T" secondAttribute="trailing" constant="13" id="dyW-sJ-yKi"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="height" secondItem="pa2-NU-u9T" secondAttribute="height" id="gW8-Uk-Cup"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="centerY" secondItem="plg-cW-7up" secondAttribute="centerY" id="h5F-Sc-HQA"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="height" secondItem="plg-cW-7up" secondAttribute="height" id="hu2-7a-9wg"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="width" secondItem="hmN-v5-PoD" secondAttribute="width" id="mTb-c2-GRb"/>
+                        <constraint firstItem="pa2-NU-u9T" firstAttribute="leading" secondItem="hmN-v5-PoD" secondAttribute="trailing" constant="10" id="s6U-Tt-Pv3"/>
+                        <constraint firstItem="c1N-AH-gdO" firstAttribute="centerY" secondItem="hmN-v5-PoD" secondAttribute="centerY" id="u9n-1v-8Z1"/>
+                        <constraint firstItem="plg-cW-7up" firstAttribute="leading" secondItem="c3Y-Tw-muJ" secondAttribute="trailing" constant="10" id="xXR-FT-e1T"/>
+                        <constraint firstItem="hmN-v5-PoD" firstAttribute="leading" secondItem="plg-cW-7up" secondAttribute="trailing" constant="10" id="zkl-Gg-ETO"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6pi-ed-aPP" customClass="SRecommendCollocationCollectionView">
+                    <rect key="frame" x="0.0" y="255" width="375" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="150" id="xLc-a6-gAj"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="X1s-vX-h2G">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mja-3P-nTV" userLabel="话题" customClass="SDiscoveryShowTopicView">
+                    <rect key="frame" x="0.0" y="553" width="375" height="375"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Mja-3P-nTV" secondAttribute="height" multiplier="1:1" id="xWh-9V-dyV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Atc-9s-oOS" userLabel="今日搭配" customClass="SDiscoveryTodayFanView">
+                    <rect key="frame" x="0.0" y="928" width="375" height="240"/>
+                    <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Atc-9s-oOS" secondAttribute="height" multiplier="25:16" id="SrU-fp-z7Z"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUs-qq-Bt9" userLabel="推荐造型师" customClass="SDesignerShowCollectionView">
+                    <rect key="frame" x="0.0" y="1168" width="375" height="110"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.86274509799999999" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IUs-qq-Bt9" secondAttribute="height" multiplier="75:22" id="mBc-TQ-c8P"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ruD-hB-ZbF" userLabel="推荐品牌" customClass="SDiscoveryBrandCollectionView">
+                    <rect key="frame" x="0.0" y="1278" width="375" height="192"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ruD-hB-ZbF" secondAttribute="height" multiplier="125:64" id="ft0-ME-m8B"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsr-AI-xN4">
+                    <rect key="frame" x="0.0" y="1723" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="W3Y-kc-rjO"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Roj-ji-Mvj" customClass="SDiscoveryShowBannerTableView">
+                    <rect key="frame" x="0.0" y="405" width="375" height="115"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Jq-TU-xkW" userLabel="优选单品" customClass="SDiscoveryProductCollectionView">
+                    <rect key="frame" x="0.0" y="1470" width="375" height="253"/>
+                    <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9Jq-TU-xkW" secondAttribute="height" multiplier="375:253" id="HKo-Tr-gUg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UhY-yC-E3m" customClass="SDiscoveryShowTitleView">
+                    <rect key="frame" x="0.0" y="520" width="375" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="QW2-rU-uqy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ruD-hB-ZbF" secondAttribute="trailing" id="35h-WE-aKb"/>
+                <constraint firstItem="ruD-hB-ZbF" firstAttribute="top" secondItem="IUs-qq-Bt9" secondAttribute="bottom" id="4bF-Za-KaH"/>
+                <constraint firstItem="6pi-ed-aPP" firstAttribute="top" secondItem="NAT-DJ-xgT" secondAttribute="bottom" id="7Db-w0-HJF"/>
+                <constraint firstAttribute="trailing" secondItem="IUs-qq-Bt9" secondAttribute="trailing" id="8aD-lk-R9A"/>
+                <constraint firstItem="wsr-AI-xN4" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="BjM-Oa-MBb"/>
+                <constraint firstItem="9Jq-TU-xkW" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="CbO-Zl-Z6k"/>
+                <constraint firstItem="Roj-ji-Mvj" firstAttribute="top" secondItem="6pi-ed-aPP" secondAttribute="bottom" id="DOK-2p-Ac6"/>
+                <constraint firstItem="IUs-qq-Bt9" firstAttribute="top" secondItem="Atc-9s-oOS" secondAttribute="bottom" id="GWK-Mz-Hs2"/>
+                <constraint firstItem="wsr-AI-xN4" firstAttribute="top" secondItem="9Jq-TU-xkW" secondAttribute="bottom" id="Gnf-DB-ZZf"/>
+                <constraint firstAttribute="trailing" secondItem="JZ4-sx-6jF" secondAttribute="trailing" id="KCa-Cj-JMI"/>
+                <constraint firstItem="Mja-3P-nTV" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Kgr-3j-wFq"/>
+                <constraint firstItem="Roj-ji-Mvj" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Lqf-D9-rSZ"/>
+                <constraint firstItem="Mja-3P-nTV" firstAttribute="top" secondItem="UhY-yC-E3m" secondAttribute="bottom" id="NOi-n2-hUY"/>
+                <constraint firstAttribute="trailing" secondItem="NAT-DJ-xgT" secondAttribute="trailing" id="QbY-6R-1yH"/>
+                <constraint firstAttribute="trailing" secondItem="Atc-9s-oOS" secondAttribute="trailing" id="Sc8-DE-cYM"/>
+                <constraint firstAttribute="trailing" secondItem="6pi-ed-aPP" secondAttribute="trailing" id="a6N-5Y-tfX"/>
+                <constraint firstItem="IUs-qq-Bt9" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="bUr-kh-neo"/>
+                <constraint firstAttribute="trailing" secondItem="9Jq-TU-xkW" secondAttribute="trailing" id="cRe-XT-ehX"/>
+                <constraint firstAttribute="bottom" secondItem="wsr-AI-xN4" secondAttribute="bottom" id="eid-ia-oJv"/>
+                <constraint firstItem="9Jq-TU-xkW" firstAttribute="top" secondItem="ruD-hB-ZbF" secondAttribute="bottom" id="gEy-71-EpO"/>
+                <constraint firstItem="JZ4-sx-6jF" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="gif-gy-fey"/>
+                <constraint firstItem="ruD-hB-ZbF" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="gyv-dG-HLZ"/>
+                <constraint firstItem="UhY-yC-E3m" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="jU1-oP-sk4"/>
+                <constraint firstAttribute="trailing" secondItem="wsr-AI-xN4" secondAttribute="trailing" id="kn9-OI-Wba"/>
+                <constraint firstItem="NAT-DJ-xgT" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="ktn-JM-fRk"/>
+                <constraint firstItem="NAT-DJ-xgT" firstAttribute="top" secondItem="JZ4-sx-6jF" secondAttribute="bottom" id="o8c-Mh-2Mx"/>
+                <constraint firstItem="Atc-9s-oOS" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="r3Y-hf-g55"/>
+                <constraint firstAttribute="trailing" secondItem="Roj-ji-Mvj" secondAttribute="trailing" id="rIe-Jd-pNm"/>
+                <constraint firstItem="UhY-yC-E3m" firstAttribute="top" secondItem="Roj-ji-Mvj" secondAttribute="bottom" id="t26-hH-tpz"/>
+                <constraint firstItem="6pi-ed-aPP" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="wRL-4h-Z1G"/>
+                <constraint firstItem="Atc-9s-oOS" firstAttribute="top" secondItem="Mja-3P-nTV" secondAttribute="bottom" id="wRc-EU-kIK"/>
+                <constraint firstItem="JZ4-sx-6jF" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="yWt-k7-xpZ"/>
+                <constraint firstAttribute="trailing" secondItem="UhY-yC-E3m" secondAttribute="trailing" id="yh1-EB-iIA"/>
+                <constraint firstAttribute="trailing" secondItem="Mja-3P-nTV" secondAttribute="trailing" id="zb8-MO-xwm"/>
+            </constraints>
+            <connections>
+                <outlet property="jumpToSubModulesView" destination="NAT-DJ-xgT" id="t1z-53-8tB"/>
+                <outlet property="recommendCollocationCollectionView" destination="6pi-ed-aPP" id="Mnx-HM-DC2"/>
+                <outlet property="showAdvertisementView" destination="JZ4-sx-6jF" id="pRU-VW-PbB"/>
+                <outlet property="showBannerView" destination="Roj-ji-Mvj" id="Bpn-PX-r8U"/>
+                <outlet property="showBrandListView" destination="ruD-hB-ZbF" id="AUM-xl-fep"/>
+                <outlet property="showDesignerView" destination="IUs-qq-Bt9" id="E59-RN-szk"/>
+                <outlet property="showProductView" destination="9Jq-TU-xkW" id="V4R-nb-9QJ"/>
+                <outlet property="showTodayFanView" destination="Atc-9s-oOS" id="Rv7-7s-haA"/>
+                <outlet property="showTopicTitleView" destination="UhY-yC-E3m" id="3nr-AK-wQ1"/>
+                <outlet property="showTopicView" destination="Mja-3P-nTV" id="Q4m-6i-Sa2"/>
+                <outlet property="titleSelectedView" destination="wsr-AI-xN4" id="fRm-qy-Fto"/>
+                <outletCollection property="jumpButton" destination="c3Y-Tw-muJ" id="cb8-pH-DBW"/>
+                <outletCollection property="jumpButton" destination="plg-cW-7up" id="gWO-qq-zjv"/>
+                <outletCollection property="jumpButton" destination="hmN-v5-PoD" id="xPw-zN-vqG"/>
+                <outletCollection property="jumpButton" destination="pa2-NU-u9T" id="osA-uV-rxt"/>
+                <outletCollection property="jumpButton" destination="c1N-AH-gdO" id="bN5-lH-bIn"/>
+            </connections>
+            <point key="canvasLocation" x="275.5" y="591.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Unico/activity.png" width="18" height="19"/>
+        <image name="Unico/brand.png" width="18" height="19"/>
+        <image name="Unico/collocation.png" width="18" height="19"/>
+        <image name="Unico/consulting.png" width="18" height="19"/>
+        <image name="Unico/star_shop.png" width="17" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

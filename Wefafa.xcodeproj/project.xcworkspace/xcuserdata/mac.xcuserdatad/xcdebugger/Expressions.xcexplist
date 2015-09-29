@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__56-[MBCreateGoodsOrderViewController createOrderInfoArray]_block_invoke_2:MBCreateGoodsOrderViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "rst">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__45-[CommunicateViewController createFriendList]_block_invoke:CommunicateViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationViewController getCollectionTopicData:mapjson:index:]:CollocationViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MBCreateGoodsOrderViewController tableView:cellForRowAtIndexPath:]:MBCreateGoodsOrderViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SQLiteOper saveAttenStaffs:returnAttenList:]:SQLiteOper.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "g_sqlite">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__40-[CollocationViewController viewDidLoad]_block_invoke271:CollocationViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationDetailGridView touchesEnded:withEvent:]:CollocationDetailGridView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationClassViewController getCollection:mapjson:]:CollocationClassViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "mapdict">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationTableView tableView:numberOfRowsInSection:]:CollocationTableView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__36-[CollocationTableViewCell setData:]_block_invoke90:CollocationTableViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationTableViewCell ImageHeadCollectionView_cellDidSelected:eventData:]:CollocationTableViewCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageHeadScrollView.dataArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MBShoppingGuideInterface ASIGetJSonRequestUrl:GetParam:Method:]:MBShoppingGuideInterface.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "encodingUrlString">
+            </PersistentString>
+            <PersistentString
+               value = "requestparam">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MainTabViewController requestFinished:]:MainTabViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "request.responseData">
+            </PersistentString>
+            <PersistentString
+               value = "request.userInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CommunicateViewController tableView:titleForHeaderInSection:]:CommunicateViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationDetailTableView tableView:cellForRowAtIndexPath:]:CollocationDetailTableView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CustomListView gridNumber:]:CustomListView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationDetailViewController notif_BuyButtonTableViewCell_onBuyButtonClick:]:CollocationDetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "directBuy.view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationViewController createCollectionClassList:]:CollocationViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__56-[MBCreateGoodsOrderViewController createOrderInfoArray]_block_invoke:MBCreateGoodsOrderViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__63+[CommMBBusiness getStaffInfoByOpenID:defaultProcess:complete:]_block_invoke_2:CommMBBusiness.m">
+      </ContextState>
+      <ContextState
+         contextName = "__35-[MainTabViewController gotoDetail]_block_invoke:MainTabViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.itemImageVName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MBCustomClassifyModelView initWithFrame:WithTitleArray:useScroll:]:MBCustomClassifyModelView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CommunicateViewController searchFriend:toTree:fromNodes:]:CommunicateViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationDetailTableView tableView:didSelectRowAtIndexPath:]:CollocationDetailTableView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CustomListView gridView:clickedItemIndex:]:CustomListView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MBShoppingGuideInterface getCollocation:result:returnMsg:]:MBShoppingGuideInterface.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "result">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationViewController createFunctionView:parentView:]:CollocationViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "attenDesignerList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MainTabViewController gotoDetail]:MainTabViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "transDic">
+            </PersistentString>
+            <PersistentString
+               value = "sns.openid">
+            </PersistentString>
+            <PersistentString
+               value = "modelArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MBShoppingGuideInterface ASIPostJSonRequest:PostParam:]:MBShoppingGuideInterface.m">
+      </ContextState>
+      <ContextState
+         contextName = "__46-[CollocationDetailViewController viewDidLoad]_block_invoke_2:CollocationDetailViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CommunicateViewController tableView:numberOfRowsInSection:]:CommunicateViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__51-[CollocationTableViewCell loadCollocationLikeList]_block_invoke_2:CollocationTableViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MBShoppingGuideInterface requestUrl:param:responseList:responseMsg:]:MBShoppingGuideInterface.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dict">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MBCreateGoodsOrderViewController MyAdderssViewController_onAddressSelected:eventData:]:MBCreateGoodsOrderViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GetViewControllerFile jumpto:WithArray:WithDictionary:WithHeadColor:WithbjColor:Withjudge:]:GetViewControllerFile.m">
+      </ContextState>
+      <ContextState
+         contextName = "__48-[CollocationClassViewController getCollection:]_block_invoke:CollocationClassViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[XMPPUserSqliteStorageObject(Cache) userForJIDFromCache:]:XMPPUserSqliteStorageObject.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate onResp:]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "__42-[MBGoodsViewController getCommentDetail:]_block_invoke:MBGoodsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_rootXML">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MBShoppingGuideInterface requestGetUrlName:param:responseAll:responseMsg:]:MBShoppingGuideInterface.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "param">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__55-[CollocationViewController createCollectionClassList:]_block_invoke257:CollocationViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MyShoppingTrollyGoodsData genprodid]:MyShoppingTrollyGoodsTableViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[WeFaFaGet getAttenDesigner:designerList:]:WeFaFaGet.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[Utils projectPlistToDictionary]:Utils.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MBCreateGoodsOrderViewController btnPayClick:]:MBCreateGoodsOrderViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "shopingcartlist">
+            </PersistentString>
+            <PersistentString
+               value = "detaillist">
+            </PersistentString>
+            <PersistentString
+               value = "param">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WeFaFaGet snsWeiXinLogin:nickname:sex:province:city:headimgurl:unionid:returnJID:returnLoginID:]:WeFaFaGet.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationClassViewController tv_OnDidSelected:RowMessage:]:CollocationClassViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationDetailViewController TabItemClick:button:]:CollocationDetailViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[OtherPeopleViewController tableView:didSelectRowAtIndexPath:]:OtherPeopleViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CommunicateViewController tableView:heightForRowAtIndexPath:]:CommunicateViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MBAddGoodsInTrollyViewController viewDidLoad]:MBAddGoodsInTrollyViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_goodsInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__37-[MyIncomeViewController viewDidLoad]_block_invoke:MyIncomeViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "sns">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationViewController listView:clickedCell:indexPath:]:CollocationViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewC.functionXML">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MBCreateGoodsOrderViewController getCellData:]:MBCreateGoodsOrderViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__45-[CollocationClassViewController viewDidLoad]_block_invoke_2:CollocationClassViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__48-[MBGoodsViewController addGoodsCompleteAction:]_block_invoke_3:MBGoodsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "msg">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationViewController tv_OnDidSelected:RowMessage:]:CollocationViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CommunicateViewController tableView:cellForRowAtIndexPath:]:CommunicateViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "sectionArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WeiXinUtils refreshWXAccessToken]:WeiXinUtils.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "WXAccess_Token">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GetViewControllerFile jumpto:WithArray:WithDictionary:WithHeadColor:WithbjColor:]:GetViewControllerFile.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "array">
+            </PersistentString>
+            <PersistentString
+               value = "rootDict">
+            </PersistentString>
+            <PersistentString
+               value = "actionType">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__55-[CollocationViewController createCollectionClassList:]_block_invoke:CollocationViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__39-[CollocationTableViewCell setLikeHead]_block_invoke359:CollocationTableViewCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.collocationLikeArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CustomNormalListView tableView:numberOfRowsInSection:]:CustomNormalListView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationDetailTableView tableView:heightForRowAtIndexPath:]:CollocationDetailTableView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationClassViewController viewDidLoad]:CollocationClassViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CustomListView gridView:gridDataForIndex:]:CustomListView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__35+[CommMBBusiness reloadMyAttenList]_block_invoke:CommMBBusiness.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "sqlite">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationViewController getCollectionData:mapjson:index:]:CollocationViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "mapdict">
+            </PersistentString>
+            <PersistentString
+               value = "jsonobject">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MyIncomeViewController initView]:MyIncomeViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "detailView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MBCreateGoodsOrderViewController onTextChanged:eventData:]:MBCreateGoodsOrderViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.rownum">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationClassViewController createFunctionView:parentView:]:CollocationClassViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CustomListView dataSourceDictionaryMap:]:CustomListView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__40-[CollocationViewController viewDidLoad]_block_invoke:CollocationViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationTableViewCell setLikeHead]:CollocationTableViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "__78-[CollocationTableViewCell ImageHeadCollectionView_cellDidSelected:eventData:]_block_invoke:CollocationTableViewCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageHeadScrollView.likeChecked">
+            </PersistentString>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationDetailViewController viewDidLoad]:CollocationDetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_data">
+            </PersistentString>
+            <PersistentString
+               value = "_functionXML">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MainTabViewController selectedTabBarItem:]:MainTabViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GetViewControllerFile getXMLAttributes:key:attributes:]:GetViewControllerFile.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "tmpDict">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationViewController viewDidLoad]:CollocationViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "subFunctionArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ImageHeadListView collectionView:cellForItemAtIndexPath:]:ImageHeadListView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationViewController createCollectionClassList]:CollocationViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dict">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CollocationClassViewController getCollection:]:CollocationClassViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[OtherPeopleViewController viewDidLoad]:OtherPeopleViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "user_ID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

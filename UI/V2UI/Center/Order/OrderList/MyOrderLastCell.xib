@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1Mh-7Y-ZcU" customClass="MyOrderLastCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Mh-7Y-ZcU" id="4Di-ej-0rs">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单编号:23456789" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuS-ch-qhq">
+                        <rect key="frame" x="15" y="5" width="157" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0XW-HO-2OD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpw-Sk-6yK" customClass="BlackButtton">
+                        <rect key="frame" x="250" y="2" width="60" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="5F4-jC-uVz"/>
+                            <constraint firstAttribute="height" constant="25" id="bOh-xJ-TlJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <state key="normal" title="确认收货">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="PressTure:" destination="1Mh-7Y-ZcU" eventType="touchUpInside" id="rK7-SQ-3X9"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akx-5b-EYx" customClass="WhiteButton">
+                        <rect key="frame" x="180" y="2" width="60" height="25"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="gEo-SP-Tcg"/>
+                            <constraint firstAttribute="width" constant="60" id="v2H-Vm-Vuk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <state key="normal" title="查看物流">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="PressTure:" destination="1Mh-7Y-ZcU" eventType="touchUpInside" id="VP6-tH-sny"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="wpw-Sk-6yK" secondAttribute="centerY" id="0sd-wO-d9I"/>
+                    <constraint firstItem="wpw-Sk-6yK" firstAttribute="leading" secondItem="Akx-5b-EYx" secondAttribute="trailing" constant="10" id="2aw-wp-6Zo"/>
+                    <constraint firstItem="Akx-5b-EYx" firstAttribute="leading" secondItem="TuS-ch-qhq" secondAttribute="trailing" constant="8" id="4lE-Hh-VDA"/>
+                    <constraint firstItem="TuS-ch-qhq" firstAttribute="leading" secondItem="4Di-ej-0rs" secondAttribute="leadingMargin" constant="7" id="Jza-eA-yTd"/>
+                    <constraint firstAttribute="trailing" secondItem="wpw-Sk-6yK" secondAttribute="trailing" constant="10" id="TeE-xY-kRe"/>
+                    <constraint firstAttribute="centerY" secondItem="TuS-ch-qhq" secondAttribute="centerY" constant="-1" id="XuN-wL-V4B"/>
+                    <constraint firstItem="wpw-Sk-6yK" firstAttribute="width" secondItem="Akx-5b-EYx" secondAttribute="width" id="Y9g-O4-XYq"/>
+                    <constraint firstItem="wpw-Sk-6yK" firstAttribute="height" secondItem="Akx-5b-EYx" secondAttribute="height" id="jPc-1M-OA5"/>
+                    <constraint firstItem="wpw-Sk-6yK" firstAttribute="centerY" secondItem="Akx-5b-EYx" secondAttribute="centerY" id="myc-Sb-TZ1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnLeft" destination="Akx-5b-EYx" id="WlV-Dh-Obg"/>
+                <outlet property="btnRight" destination="wpw-Sk-6yK" id="I6h-3r-JJW"/>
+                <outlet property="labLeft" destination="TuS-ch-qhq" id="dDY-87-hQF"/>
+            </connections>
+            <point key="canvasLocation" x="118" y="151"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCollectionViewController">
+            <connections>
+                <outlet property="collectionView" destination="ywA-qm-e0Y" id="Ocp-ND-f3y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdT-Jq-rcf">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruz-jb-Qna">
+                            <rect key="frame" x="0.0" y="8" width="300" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="搭配">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIa-5W-znP">
+                            <rect key="frame" x="300" y="8" width="300" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="单品">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cIa-5W-znP" firstAttribute="height" secondItem="ruz-jb-Qna" secondAttribute="height" id="3ob-lh-xeb"/>
+                        <constraint firstAttribute="height" constant="45" id="F6x-Fw-tA7"/>
+                        <constraint firstAttribute="bottom" secondItem="ruz-jb-Qna" secondAttribute="bottom" constant="7" id="JQC-1d-b50"/>
+                        <constraint firstItem="cIa-5W-znP" firstAttribute="centerY" secondItem="ruz-jb-Qna" secondAttribute="centerY" id="LEW-aI-DRp"/>
+                        <constraint firstItem="cIa-5W-znP" firstAttribute="width" secondItem="ruz-jb-Qna" secondAttribute="width" id="RXi-Mi-6aX"/>
+                        <constraint firstItem="cIa-5W-znP" firstAttribute="leading" secondItem="ruz-jb-Qna" secondAttribute="trailing" id="VcW-1R-F7d"/>
+                        <constraint firstItem="ruz-jb-Qna" firstAttribute="leading" secondItem="FdT-Jq-rcf" secondAttribute="leading" id="Wdm-rU-DZ0"/>
+                        <constraint firstAttribute="bottom" secondItem="cIa-5W-znP" secondAttribute="bottom" constant="7" id="Xgo-qJ-DLY"/>
+                        <constraint firstItem="cIa-5W-znP" firstAttribute="leading" secondItem="ruz-jb-Qna" secondAttribute="trailing" id="c4q-Jp-I1y"/>
+                        <constraint firstItem="cIa-5W-znP" firstAttribute="leading" secondItem="ruz-jb-Qna" secondAttribute="trailing" id="m1K-Bk-eUc"/>
+                        <constraint firstItem="cIa-5W-znP" firstAttribute="top" secondItem="FdT-Jq-rcf" secondAttribute="top" constant="8" id="obJ-LH-IkK"/>
+                        <constraint firstAttribute="trailing" secondItem="cIa-5W-znP" secondAttribute="trailing" id="vzq-ij-0QO"/>
+                        <constraint firstItem="ruz-jb-Qna" firstAttribute="top" secondItem="FdT-Jq-rcf" secondAttribute="top" constant="8" id="wjr-qz-mZS"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ywA-qm-e0Y">
+                    <rect key="frame" x="0.0" y="45" width="600" height="491"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="kfm-Op-dli">
+                        <size key="itemSize" width="160" height="170"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Tdl-k9-f6n"/>
+                        <outlet property="delegate" destination="-1" id="gF9-t7-MZs"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ywA-qm-e0Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AsZ-BK-aYF"/>
+                <constraint firstAttribute="trailing" secondItem="ywA-qm-e0Y" secondAttribute="trailing" id="IQH-ng-gyp"/>
+                <constraint firstItem="FdT-Jq-rcf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JHq-5l-47n"/>
+                <constraint firstItem="ywA-qm-e0Y" firstAttribute="top" secondItem="FdT-Jq-rcf" secondAttribute="bottom" id="Wsg-vb-B1k"/>
+                <constraint firstAttribute="trailing" secondItem="FdT-Jq-rcf" secondAttribute="trailing" id="cwI-wh-g1Q"/>
+                <constraint firstAttribute="bottom" secondItem="ywA-qm-e0Y" secondAttribute="bottom" id="pTy-At-NuS"/>
+                <constraint firstItem="FdT-Jq-rcf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tYG-V3-ClH"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="356" y="313"/>
+        </view>
+    </objects>
+</document>

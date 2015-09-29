@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressViewController">
+            <connections>
+                <outlet property="addNewAddress" destination="vUz-aO-kpJ" id="piI-6G-9RG"/>
+                <outlet property="tableViews" destination="ual-aG-UjP" id="Ikw-cf-qnh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ual-aG-UjP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NEQ-5b-Eod"/>
+                        <outlet property="delegate" destination="-1" id="ZyY-Uf-rw6"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLA-bo-rix">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUz-aO-kpJ" customClass="LongButtton">
+                            <rect key="frame" x="120" y="10" width="80" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="7w8-z0-KBI"/>
+                                <constraint firstAttribute="height" constant="29" id="DVH-db-3eo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="添加新地址" backgroundImage="tab_data_yellow">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="creatNewAddress:" destination="-1" eventType="touchUpInside" id="YPr-AD-geB"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VwU-iy-8qV">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="vUz-aO-kpJ" secondAttribute="centerY" id="dyK-gj-X5b"/>
+                        <constraint firstAttribute="centerX" secondItem="vUz-aO-kpJ" secondAttribute="centerX" id="wLT-g0-8st"/>
+                        <constraint firstAttribute="height" constant="50" id="xuf-L5-hHM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uLA-bo-rix" firstAttribute="top" secondItem="ual-aG-UjP" secondAttribute="bottom" id="R60-t2-ehm"/>
+                <constraint firstAttribute="trailing" secondItem="ual-aG-UjP" secondAttribute="trailing" id="RrC-I6-vXB"/>
+                <constraint firstItem="uLA-bo-rix" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kMJ-Vh-2IU"/>
+                <constraint firstAttribute="trailing" secondItem="uLA-bo-rix" secondAttribute="trailing" id="nn4-7T-zHb"/>
+                <constraint firstItem="ual-aG-UjP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="r20-kg-cLP"/>
+                <constraint firstAttribute="bottom" secondItem="uLA-bo-rix" secondAttribute="bottom" id="sY9-yN-Wvi"/>
+                <constraint firstItem="ual-aG-UjP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vsG-Hb-Mbg"/>
+            </constraints>
+            <point key="canvasLocation" x="351" y="285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tab_data_yellow" width="80" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

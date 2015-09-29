@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailVC">
+            <connections>
+                <outlet property="btnLeft" destination="TCD-6t-msG" id="o08-j5-yAj"/>
+                <outlet property="btnRight" destination="Q0n-hN-vcB" id="xn0-3V-H0V"/>
+                <outlet property="tableView" destination="x52-q8-8e1" id="XK4-i1-VVg"/>
+                <outlet property="vieTableFoot" destination="RUh-wk-jy2" id="KsD-EB-R7v"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="x52-q8-8e1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="nGk-cF-PdD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="Zha-x4-MXq">
+                        <rect key="frame" x="0.0" y="492" width="600" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gH3-7N-FNT"/>
+                        <outlet property="delegate" destination="-1" id="EgL-sc-pyX"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUh-wk-jy2">
+                    <rect key="frame" x="140" y="550" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCD-6t-msG" customClass="WhiteButton">
+                            <rect key="frame" x="45" y="10" width="100" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="DiF-Hp-b9B"/>
+                                <constraint firstAttribute="height" constant="30" id="Efa-C2-PCK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <state key="normal" title="评价晒单">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="PressStatus:" destination="-1" eventType="touchUpInside" id="pUc-AH-fRa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0n-hN-vcB" customClass="BlackButtton">
+                            <rect key="frame" x="175" y="10" width="100" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Tbg-RZ-dFk"/>
+                                <constraint firstAttribute="height" constant="30" id="raO-2B-74W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <state key="normal" title="查看物流">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="PressStatus:" destination="-1" eventType="touchUpInside" id="6qP-LF-Gyz"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOX-3h-skF">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.89988345994475138" green="0.89988345994475138" blue="0.89988345994475138" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="dtx-t0-hsz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="DXm-Iu-E0m"/>
+                        <constraint firstItem="Q0n-hN-vcB" firstAttribute="leading" secondItem="TCD-6t-msG" secondAttribute="trailing" constant="30" id="G23-Br-4sh"/>
+                        <constraint firstAttribute="centerY" secondItem="TCD-6t-msG" secondAttribute="centerY" id="Hfp-5a-8ex"/>
+                        <constraint firstItem="cOX-3h-skF" firstAttribute="top" secondItem="RUh-wk-jy2" secondAttribute="top" id="Irw-P8-Iro"/>
+                        <constraint firstItem="cOX-3h-skF" firstAttribute="leading" secondItem="RUh-wk-jy2" secondAttribute="leading" id="PHj-Qg-ltB"/>
+                        <constraint firstAttribute="height" constant="50" id="abB-RF-swp"/>
+                        <constraint firstItem="TCD-6t-msG" firstAttribute="leading" secondItem="RUh-wk-jy2" secondAttribute="leading" constant="45" id="bkK-OD-Vsn"/>
+                        <constraint firstAttribute="centerY" secondItem="Q0n-hN-vcB" secondAttribute="centerY" id="gou-Ja-3ka"/>
+                        <constraint firstAttribute="trailing" secondItem="cOX-3h-skF" secondAttribute="trailing" id="mnm-jm-2wP"/>
+                        <constraint firstAttribute="width" constant="320" id="rXT-Rk-Pwr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="RUh-wk-jy2" secondAttribute="centerX" id="Kos-sw-YgM"/>
+                <constraint firstAttribute="trailing" secondItem="x52-q8-8e1" secondAttribute="trailing" id="Wns-nh-bJj"/>
+                <constraint firstItem="x52-q8-8e1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ktF-JA-pOO"/>
+                <constraint firstAttribute="bottom" secondItem="RUh-wk-jy2" secondAttribute="bottom" id="oIL-fe-fuL"/>
+                <constraint firstAttribute="bottom" secondItem="x52-q8-8e1" secondAttribute="bottom" id="pmd-ga-JNE"/>
+                <constraint firstItem="x52-q8-8e1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vEJ-lZ-N3V"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+        </view>
+    </objects>
+</document>

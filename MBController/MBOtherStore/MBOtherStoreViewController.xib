@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MBOtherStoreViewController">
+            <connections>
+                <outlet property="attentionButton" destination="32K-yc-X9H" id="vv7-lG-asB"/>
+                <outlet property="contentSubSelectedView" destination="z7k-DS-mA0" id="7TJ-Di-x5i"/>
+                <outlet property="contentView" destination="53q-Ni-NEz" id="Tqi-pl-t3W"/>
+                <outlet property="headerContentView" destination="4Dy-yk-HTz" id="H56-8p-OoE"/>
+                <outlet property="headerView" destination="dgy-yv-hny" id="7dp-P8-aiC"/>
+                <outlet property="sendMessageButton" destination="eTj-UI-3Nj" id="mt2-gD-tT4"/>
+                <outlet property="showGenderButton" destination="Pan-hL-efd" id="mxf-Tc-twg"/>
+                <outlet property="userIconImageView" destination="7ak-IC-Mti" id="0ZZ-PC-Kuf"/>
+                <outlet property="userNickNameLabel" destination="jLQ-4U-wzT" id="7rP-ux-Yab"/>
+                <outlet property="userSignatureLabel" destination="uDr-Dk-Ra3" id="XoV-lC-hAr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="selectedContentButtonArray" destination="Tjf-39-Bdg" id="hOL-SL-lRU"/>
+                <outletCollection property="selectedContentButtonArray" destination="XA4-Sc-qfu" id="ebd-Hw-Bkq"/>
+                <outletCollection property="selectedContentButtonArray" destination="LOW-QP-L6N" id="cxG-sC-cd8"/>
+                <outletCollection property="selectedContentButtonArray" destination="SlX-sf-Ky0" id="cwa-4s-Ut1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53q-Ni-NEz">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Dy-yk-HTz">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="219"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="个性签名:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDr-Dk-Ra3">
+                                    <rect key="frame" x="80" y="45" width="225" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ak-IC-Mti">
+                                    <rect key="frame" x="15" y="20" width="50" height="50"/>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="o4m-cS-78g" appends="YES" id="s8k-4D-mJM"/>
+                                    </connections>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLQ-4U-wzT">
+                                    <rect key="frame" x="80" y="25" width="21" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-DS-mA0">
+                                    <rect key="frame" x="15" y="179" width="290" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32K-yc-X9H" customClass="NoneHighlightedButton">
+                                    <rect key="frame" x="81" y="88" width="60" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="jiaguanzhu.png">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="yiguanzhu.png"/>
+                                    <connections>
+                                        <action selector="attentionButtonAction:" destination="-1" eventType="touchUpInside" id="Tue-BA-wkQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTj-UI-3Nj">
+                                    <rect key="frame" x="179" y="88" width="60" height="24"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                    <state key="normal" title="发消息" backgroundImage="btn_myorder_black">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="sendMassageButtonAction:" destination="-1" eventType="touchUpInside" id="Nkd-n0-j63"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfu-UG-b7B">
+                                    <rect key="frame" x="0.0" y="135" width="600" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjf-39-Bdg" customClass="SelectedSubButton">
+                                            <rect key="frame" x="0.0" y="1" width="80" height="44"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="创作">
+                                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="selectedContentAction:" destination="-1" eventType="touchUpInside" id="y2s-nc-fC9"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XA4-Sc-qfu" customClass="SelectedSubButton">
+                                            <rect key="frame" x="80" y="1" width="81" height="44"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="喜欢">
+                                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="selectedContentAction:" destination="-1" eventType="touchUpInside" id="vy0-wu-qNi"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOW-QP-L6N" customClass="SelectedSubButton">
+                                            <rect key="frame" x="160" y="1" width="81" height="44"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="粉丝">
+                                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="selectedContentAction:" destination="-1" eventType="touchUpInside" id="Epq-LR-7MW"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlX-sf-Ky0" customClass="SelectedSubButton">
+                                            <rect key="frame" x="240" y="1" width="80" height="44"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="关注">
+                                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="selectedContentAction:" destination="-1" eventType="touchUpInside" id="jfy-BY-DwV"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pan-hL-efd">
+                                    <rect key="frame" x="105" y="29" width="13" height="13"/>
+                                    <state key="normal" image="nv.png">
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" image="nan.png"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgy-yv-hny">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dgy-yv-hny" firstAttribute="trailing" secondItem="53q-Ni-NEz" secondAttribute="trailing" id="ARL-fJ-RZj"/>
+                <constraint firstAttribute="bottom" secondItem="53q-Ni-NEz" secondAttribute="bottom" id="LlT-vg-8Lg"/>
+                <constraint firstItem="dgy-yv-hny" firstAttribute="leading" secondItem="53q-Ni-NEz" secondAttribute="leading" id="OMI-hS-6CH"/>
+                <constraint firstItem="53q-Ni-NEz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="S26-Oc-qUJ"/>
+                <constraint firstItem="53q-Ni-NEz" firstAttribute="top" secondItem="dgy-yv-hny" secondAttribute="bottom" id="Zbr-Tx-Co8"/>
+                <constraint firstItem="dgy-yv-hny" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ez2-L7-sfP"/>
+                <constraint firstAttribute="trailing" secondItem="53q-Ni-NEz" secondAttribute="trailing" id="hiG-MW-gR6"/>
+                <constraint firstItem="53q-Ni-NEz" firstAttribute="leading" secondItem="dgy-yv-hny" secondAttribute="leading" id="uaQ-4G-jiP"/>
+                <constraint firstItem="53q-Ni-NEz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yaK-eU-1Ie"/>
+                <constraint firstItem="53q-Ni-NEz" firstAttribute="top" secondItem="dgy-yv-hny" secondAttribute="bottom" id="ysg-JM-vTt"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Zbr-Tx-Co8"/>
+                    <exclude reference="uaQ-4G-jiP"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="337" y="341"/>
+        </view>
+        <tapGestureRecognizer id="o4m-cS-78g">
+            <connections>
+                <action selector="userIconImageAction:" destination="-1" id="Yz9-HC-Pmd"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="btn_myorder_black" width="60" height="24"/>
+        <image name="jiaguanzhu.png" width="60" height="24"/>
+        <image name="nan.png" width="13" height="13"/>
+        <image name="nv.png" width="13" height="13"/>
+        <image name="yiguanzhu.png" width="60" height="24"/>
+    </resources>
+</document>
